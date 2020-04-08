@@ -24,13 +24,13 @@ int main(void) {
 		tempB = PINB & 0x01;
 		weight = weight | tempB;
 		if((weight < 70) && (weight > 5)) {
-			PORTB = tempB | 0x04;
+			PORTB = 0x04;
 		}
 		else if (weight >= 70) {
-			PORTB = tempB | 0x02;
+			PORTB = 0x02;
 		}
 		else {
-			PORTB = tempB | 0x00;
+			PORTB = 0x00;
 		}
 	}
 	return 1;

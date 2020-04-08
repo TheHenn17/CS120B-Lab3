@@ -37,14 +37,14 @@ test "Weight: 1 => PORTB: 0x01"
 setPIND 0x00
 setPINB 0x01
 continue 5
-expectPORTB 0x01
+expectPORTB 0x00
 checkResult
 
 test "Weight: 5 => PORTB: 0x01"
 setPIND 0x02
 setPINB 0x01
 continue 5
-expectPORTB 0x01
+expectPORTB 0x00
 checkResult
 
 test "Weight: 6 => PORTB: 0x04"
@@ -58,7 +58,7 @@ test "Weight: 69 => PORTB: 0x00"
 setPIND 0x22
 setPINB 0x01
 continue 5
-expectPORTB 0x05
+expectPORTB 0x04
 checkResult
 
 test "Weight: 70 => PORTB: 0x02"

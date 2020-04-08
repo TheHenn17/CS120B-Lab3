@@ -21,7 +21,7 @@ int main(void) {
 	unsigned char tempC;
 	while (1) {
 		tempA = PINA & 0x0F;
-		tempC = 0x00;
+		tempC = 0x40;
 		if((tempA >= 1) && (tempA <= 2)) {
 			tempC = 0x60;
 		}
